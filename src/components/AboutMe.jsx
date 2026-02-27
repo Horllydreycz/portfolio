@@ -69,7 +69,7 @@ function AboutMe() {
                 <Mail size={20} />
               </a>
               <a
-                href="www.linkedin.com/in/titus-oluwadare"
+                href="https://www.linkedin.com/in/titus-oluwadare"
                 className="text-gray-300 hover:text-blue-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
