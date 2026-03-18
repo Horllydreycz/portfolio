@@ -2,13 +2,18 @@ import React from "react";
 import { MapPin } from "lucide-react";
 import { Mail } from "lucide-react";
 import { Zap } from "lucide-react";
+import profileImg from "../assets/profile.png";
+import bannerImg from "../assets/3.png";
 
 function Header() {
   return (
     <div className="border-b border-gray-200">
       {/* Banner */}
       <div className="h-64 sm:h-72 md:h-80 relative overflow-hidden">
-        <div className="bg-[url('src/assets/3.png')] bg-cover bg-center h-full w-full"></div>
+        <div
+          className="bg-cover bg-center h-full w-full"
+          style={{ backgroundImage: `url(${bannerImg})` }}
+        ></div>
       </div>
 
       {/* Profile Photo */}
@@ -16,7 +21,7 @@ function Header() {
         <div className="absolute -top-20 z-10">
           <div className="relative">
             <img
-              src="src/assets/profile.png"
+              src={profileImg}
               alt="Pfp"
               className="w-40 h-40 border-4 border-white object-cover rounded-full shadow-lg"
             />
